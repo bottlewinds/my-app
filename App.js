@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Holiwi q pasooo te amo mi amooor</Text>
+      <Image source={require('./assets/profile.png')} style={styles.profile}/>
+      <Text>Holiwi</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +17,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  profile: {
+    margin: 20,
   },
 });
